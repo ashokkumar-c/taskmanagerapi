@@ -1,0 +1,52 @@
+{
+    "DEVELOPMENT": {
+        "app":{
+            "port" : 3000
+        },
+        "db":{
+            "host":"localhost",
+            "port":"27017",
+            "database":"taskdb"
+        }
+    },
+    "UNITTESTING": {
+        "app":{
+            "port" : 3000
+        },
+        "db":{
+            "host":"localhost",
+            "port":"27017",
+            "database":"taskdb"
+        }
+    },
+    "SIT": {
+        "app":{
+            "port" : 3000
+        },
+        "db":{
+            "host":"localhost",
+            "port":"27017",
+            "database":"taskdb"
+        }
+    },
+    "UAT": {
+        "app":{
+            "port" : 3000
+        },
+        "db":{
+            "host":"localhost",
+            "port":"27017",
+            "database":"taskdb"
+        }
+    },
+    "PRODUCTION": {
+        "app":{
+            "port" : 3000
+        },
+        "db":{
+            "host":"localhost",
+            "port":"27017",
+            "database":"taskdb"
+        }
+    }
+}
