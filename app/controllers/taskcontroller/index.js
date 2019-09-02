@@ -29,7 +29,6 @@ exports.add = (req, res) => {
     }
 
     const task = new TaskModel({
-        _id: req.body._id,
         parentTaskId: req.body.parentTaskId,
         task: req.body.task,
         startDate: req.body.startDate,
@@ -68,6 +67,7 @@ exports.findTaskByID = (req, res, next) => {
 };
 
 exports.get = (req, res) => {
+    console.log(req.params.id);
     TaskModel.findById(req.params.id)
     .then(objTaskModel =>{
         if(!objTaskModel) {

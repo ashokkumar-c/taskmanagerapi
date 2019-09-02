@@ -4,12 +4,12 @@ const { Schema } = mongoose;
 
 const taskModel = new Schema(
   {
-    _id: { type: String },
-    parentTaskId: { type: String },
     task: { type: String },
+    parentTaskId: { type: String },    
     startDate: { type: Date },
     endDate: { type: Date },
-    priority: { type: Number, default: 0, min:0, max:30 }
+    priority: { type: Number, default: 0, min:0, max:30 },
+    isCompleted: {type: Boolean, default: false}
   }
 );
 

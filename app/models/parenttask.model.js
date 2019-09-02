@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const parentTaskModel = new Schema(
-  {
-    _id: { type: String },
+  {    
     parenttask: { type: String }    
   }
 );
